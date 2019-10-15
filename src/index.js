@@ -1,7 +1,7 @@
 const Game = require("../lib/game");
 const MovingObject = require("../lib/moving_object");
 
-const What = new MovingObject({pos: [0,0], vel: [0,1], radius: 10, color: "#ff0000"});
+const What = new MovingObject({pos: [0,0], vel: [0,1], radius: 4, color: "#ff0000"});
 
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("centipede");
