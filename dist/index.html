@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="application.css">
     <!-- <script src="../src/index.js"></script> -->
     <title>Centipede</title>
 </head>
 <body>
-    <canvas id="centipede"></canvas>
+    <div class="main">
+        <div class="instructions">
+            <div class="instructions-top">
+                <h1>Centipede</h1>
+                <div class="links">
+                    <a href="https://github.com/ropfa0604/Centipede">Github</a>
+                    <a href="https://www.linkedin.com/in/brett-meyer-0143a9117">LinkedIn</a>
+                </div>
+                <p>Kill the centipede to win, but don't let the bugs touch you.</p>
+            </div>
+            <div class="controls">
+                <div class="arrow-keys">
+                    <h3>Move</h3>
+                    <img src="../arrowkeys.png" alt="arrow keys" />
+                </div>
+                <div class="spacebar">
+                    <h3>Shoot</h3>
+                    <img src="../spacebar.png" alt="spacebar" />
+                </div>
+            </div>
+        </div>
+        <canvas id="centipede"></canvas>
+    </div>
 
     <script type="application/javascript" src="./bundle.js"></script>
 </body>
