@@ -58,12 +58,13 @@ canvas {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding-top: 30px;
+    padding-top: 25px;
     background-color: rgb(70,70,70);
 }
 
 .controls img {
     min-height: 35px;
+    max-height: 80px;
     width: 170px;
     padding-bottom: 20px;
 }
@@ -71,4 +72,9 @@ canvas {
 .controls img:first-child {
     min-height: 80px;
     width: 120px;
+}
+
+.escape-button {
+    height: 40px;
+    max-width: 55px;
 }
