@@ -38,13 +38,17 @@ canvas {
 }
 
 .instructions p {
-    text-align: left;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: rgb(50,50,50);
 }
 
 .links {
+    text-align: center;
+}
+
+.links p {
     text-align: center;
 }
 
