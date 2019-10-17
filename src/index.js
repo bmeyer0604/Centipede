@@ -5,7 +5,4 @@ document.addEventListener("DOMContentLoaded", () => {
     const ctx = canvas.getContext("2d");
     const game = new Game(ctx);
     game.start();
-
-    canvas.width = game.DIM_X;
-    canvas.height = game.DIM_Y;
 })
