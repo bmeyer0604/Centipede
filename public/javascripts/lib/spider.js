@@ -3,9 +3,9 @@ const Laser = require("./laser");
 const Util = require("../src/util");
 
 const spider = new Image();
-spider.src = "../images/spider.png";
+spider.src = "../../images/spider.png";
 
-const bugDeath = new Audio("../sfx/bugDeath.mp4");
+const bugDeath = new Audio("../../sfx/bugDeath.mp4");
 
 class Spider {
     constructor(context, canvasWidth, canvasHeight, x, y, game) {

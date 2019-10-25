@@ -3,9 +3,9 @@ const Mushroom = require("./mushroom");
 const Util = require("../src/util");
 
 const flea = new Image();
-flea.src = "../images/flea.png";
+flea.src = "../../images/flea.png";
 
-const bugDeath = new Audio("../sfx/bugDeath.mp4");
+const bugDeath = new Audio("../../sfx/bugDeath.mp4");
 
 class Flea {
     constructor(context, canvasWidth, canvasHeight, x, y, game) {

@@ -8,7 +8,7 @@ class Laser {
         this.canvasHeight = canvasHeight;
         this.player = player;
         this.game = game;
-        this.x = this.player.x + 23;
+        this.x = this.player.x + player.radius;
         this.y = this.player.y + 2;
         this.radius = 1;
         this.velocityX = 0;

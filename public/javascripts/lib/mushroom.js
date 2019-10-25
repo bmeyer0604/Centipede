@@ -2,7 +2,7 @@ const Laser = require("./laser");
 const Util = require("../src/util");
 
 const mushroom = new Image();
-mushroom.src = "../images/mushroom.png";
+mushroom.src = "../public/images/mushroom.png";
 
 class Mushroom {
     constructor(context, canvasWidth, canvasHeight, x, y, game) {

@@ -4,19 +4,19 @@ const Util = require("../src/util");
 // Centipede segment
 
 const segment = new Image();
-segment.src = "../images/centipede-body.png";
+segment.src = "../../images/centipede-body.png";
 const segmentReverse = new Image();
-segmentReverse.src = "../images/centipede-body-reverse.png";
+segmentReverse.src = "../../images/centipede-body-reverse.png";
 const segmentDown = new Image();
-segmentDown.src = "../images/centipede-down.png";
+segmentDown.src = "../../images/centipede-down.png";
 const headSeg = new Image();
-headSeg.src = "../images/centipede-head.png";
+headSeg.src = "../../images/centipede-head.png";
 const headSegReverse = new Image();
-headSegReverse.src = "../images/centipede-head-reverse.png";
+headSegReverse.src = "../../images/centipede-head-reverse.png";
 const headDown = new Image();
-headDown.src = "../images/head-down.png";
+headDown.src = "../../images/head-down.png";
 
-const centipedeDeath = new Audio("../sfx/centipedeDeath.mp4");
+const centipedeDeath = new Audio("../../sfx/centipedeDeath.mp4");
 
 class CentipedeSegment {
     constructor(context, canvasWidth, canvasHeight, x, y, game, head=false) {

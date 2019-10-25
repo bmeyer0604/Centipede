@@ -3,9 +3,9 @@ const Mushroom = require("./mushroom");
 const Util = require("../src/util");
 
 const scorpion = new Image();
-scorpion.src = "../images/scorpion.png";
+scorpion.src = "../../images/scorpion.png";
 
-const bugDeath = new Audio("../sfx/bugDeath.mp4");
+const bugDeath = new Audio("../../sfx/bugDeath.mp4");
 
 class Scorpion {
     constructor(context, canvasWidth, canvasHeight, x, y, game) {
