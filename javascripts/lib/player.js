@@ -7,12 +7,12 @@ const Laser = require("./laser");
 const Util = require("../src/util");
 
 const ship = new Image();
-ship.src = "../../images/ship.png";
+ship.src = "./images/ship.png";
 const playerHeight = 35;
 const playerWidth = 28;
 
-const laserBlast = new Audio("../../sfx/laser.mp4");
-const explosion = new Audio("../../sfx/explosion.mp4");
+const laserBlast = new Audio("./sfx/laser.mp4");
+const explosion = new Audio("./sfx/explosion.mp4");
 
 class Player {
     constructor(context, canvasWidth, canvasHeight, game) {

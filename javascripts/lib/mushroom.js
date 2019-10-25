@@ -1,53 +1,36 @@
 const Laser = require("./laser");
-const Mushroom = require("./mushroom");
 const Util = require("../src/util");
 
-const scorpion = new Image();
-scorpion.src = "../../images/scorpion.png";
+const mushroom = new Image();
+mushroom.src = "./images/mushroom.png";
 
-const bugDeath = new Audio("../../sfx/bugDeath.mp4");
-
-class Scorpion {
+class Mushroom {
     constructor(context, canvasWidth, canvasHeight, x, y, game) {
         this.context = context;
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
         this.game = game;
 
-        this.image = scorpion;
+        this.image = mushroom;
         this.x = x;
         this.y = y;
-        this.sourceWidth = 16;
+        this.sourceWidth = 8;
         this.sourceHeight = 8;
-        this.width = 50;
-        this.height = 25;
+        this.width = 28;
+        this.height = 28;
         this.sourceX = 0;
         this.sourceY = 0;
-        this.radius = 30;
+        this.radius = 14;
 
-        this.velocityX = -.1;
-
-        this.frames = 0;
+        this.poisoned = false;
     }
 
-    draw() {
-        this.frames += 1;
-        if(this.frames === 300) {
-            this.frames = 0;
-            this.sourceX = (this.sourceX + this.sourceWidth) % 64
-        }
+    draw(ctx) {
         // (img, sx, sy, sw, sh, dx, dy, dw, dh)
         this.context.drawImage(
             this.image, this.sourceX, this.sourceY, this.sourceWidth, 
             this.sourceHeight, this.x, this.y, this.width, this.height
         );
-    }
-
-    move() {
-        this.x += this.velocityX;
-        if (this.x < 0) {
-            this.remove();
-        }
     }
 
     isCollidedWith(otherObj) {
@@ -58,14 +41,21 @@ class Scorpion {
     collideWith(otherObj) {
         if(otherObj instanceof Laser) {
             otherObj.remove();
-            this.remove();
-            bugDeath.play();
-            this.game.points += 1000;
-            this.game.checkPoints();
-        } else if(otherObj instanceof Mushroom) {
-            otherObj.poisoned = true;
-            otherObj.sourceY = 8;
+            this.take_damage();
         }
+    }
+
+    take_damage() {
+        if(this.sourceX < 16) {
+            this.sourceX += 8;
+        } else {
+            this.remove();
+            this.game.points += 1;
+            this.game.checkPoints();
+        }
+    }
+
+    move() {
     }
 
     remove() {
@@ -73,4 +63,4 @@ class Scorpion {
     }
 }
 
-module.exports = Scorpion;
+module.exports = Mushroom;
