@@ -1,6 +1,7 @@
 const Laser = require("./laser");
 const Mushroom = require("./mushroom");
 const Util = require("../src/util");
+// Centipede segment
 
 const segment = new Image();
 segment.src = "../images/centipede-body.png";
