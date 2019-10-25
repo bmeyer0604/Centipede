@@ -6,3 +6,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const game = new Game(ctx);
     game.start();
 })
+
+//This is a comment
