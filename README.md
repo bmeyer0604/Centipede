@@ -1,6 +1,6 @@
 https://optimistic-jackson-9bb78b.netlify.com/
 
-<img src="https://imgur.com/kwGCSbw"/>
+<img src="https://github.com/ropfa0604/Centipede/blob/master/images/demoImage.png"/>
 
 Centipede is a retro arcade game in which a player-controlled spaceship must defeat a monster centipede (and various other bugs). The player controls the spaceship in order to destroy the bugs.
 
